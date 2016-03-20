@@ -1,0 +1,44 @@
+---
+layout: blog
+---
+<!-- Post -->
+<article class="post">
+    <header>
+        <div class="title">
+            <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
+            <p>یک توضیح مختصر</p>
+        </div>
+        <div class="meta">
+            <time class="published" datetime="2015-11-01">1 فروردین 1395</time>
+            <a href="#" class="author">
+                <span class="name">حسین زعفرانی</span>
+                <img src="images/avatar.jpg" alt=""/>
+            </a>
+        </div>
+    </header>
+    <a href="#" class="image featured"><img src="images/pic02.jpg" alt=""/></a>
+    <p>
+        {{ content }}
+    </p>
+    <footer>
+        <!--<ul class="stats">-->
+        <!--<li><a href="#">General</a></li>-->
+        <!--<li><a href="#" class="icon fa-heart">28</a></li>-->
+        <!--<li><a href="#" class="icon fa-comment">128</a></li>-->
+        <!--</ul>-->
+        {% include share.html %}
+    </footer>
+</article>
+<div style="border-top:1px dotted;display: none">
+    <p>
+        {% if page.next %}
+        <a href="{{ page.next.url }}" style="float: left">
+            {{ page.next.title }} >> </a>
+        {% endif %}
+
+        {% if page.previous %}
+        <a href="{{ page.previous.url }}" style="margin-right:0px;">
+            &#60&#60 {{ page.previous.title }}</a>
+        {% endif %}
+    </p>
+</div>

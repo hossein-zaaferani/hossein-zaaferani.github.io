@@ -1,0 +1,33 @@
+<!-- Pagination -->
+<ul class="actions pagination">
+
+    {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path }}" class="button big next">Next Page</a></li>
+    {% else %}
+    <li><a class="disabled button big next">Next Page</a></li>
+    {% endif %}
+    <!--<li><a class="disabled button big">1 از 10</a></li>-->
+    {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path }}" class="button big previous">Previous Page</a></li>
+    {% else %}
+    <li><a class="disabled button big previous">Previous Page</a></li>
+    {% endif %}
+</ul>
+
+<!-- Pagination links -->
+<div class="pagination center" style="display: none">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">جدیدتر</a>
+    {% else %}
+    <span class="previous">جدیدتر ندارد</span>
+    {% endif %}
+    &nbsp❖&nbsp<span class="page_number ">
+  برگه‌ی {{ paginator.page | habify}} از {{ paginator.total_pages | habify}}
+  </span>
+    &nbsp❖&nbsp
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">قدیمی‌تر</a>
+    {% else %}
+    <span class="next ">قدیمی‌تر ندارد</span>
+    {% endif %}
+</div>

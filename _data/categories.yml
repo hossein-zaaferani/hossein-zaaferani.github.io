@@ -1,0 +1,7 @@
+﻿- slug: jekyll
+  name: Jekyll
+  color: '#3498db'
+
+- slug: android
+  name: Android
+  color: '#1abc9c'

@@ -1,0 +1,29 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: سایت شخصی حسین زعفرانی
+name: حسین زعفرانی
+email: zaaferani@hotmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Nifty little description
+#url: http://hossein-zaaferani.ir # the base hostname & protocol for your site
+base_url: http://hossein-zaaferani.ir
+blog: http://hossein-zaaferani.ir/blog
+domain: hossein-zaaferani.ir
+github_username: hos3ein
+
+excerpt_separator: <!--more-->
+
+# Build settings
+markdown: kramdown
+timezone: Asia/Tehran
+permalink: /blog/:categories/:year-:month-:day/:title
+paginate: 3
+paginate_path: "/blog/page:num/"
+
+gems: [jekyll-paginate]

@@ -1,0 +1,16 @@
+---
+layout: blog
+---
+
+<h1>Articles by tag :{{ page.tag }}</h1>
+<div>
+    {% if site.tags[page.tag] %}
+    {% for post in site.tags[page.tag] %}
+    {% include article.html %}
+    {% endfor %}
+    {% else %}
+    <article class="post txt-center">
+        <p>There are no articles for tag: <strong>{{ page.title }}</strong></p>
+    </article>
+    {% endif %}
+</div>

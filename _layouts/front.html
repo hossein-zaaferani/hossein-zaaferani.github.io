@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="{{ '/css/front.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="content">
+
+    <img src="/assets/images/background.jpg" id="fullscreen">
+
+
+    <img src="/assets/images/17301305.png" id="avatar">
+
+    <h1>{{ site.name }}</h1>
+    <h3>{{ site.description }}</h3>
+
+    <ul>
+        {% if site.github_username %}
+        <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span
+                class="description">GitHub</span></a></li>
+        {% endif %}
+        {% if site.twitter_username %}
+        <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span
+                class="description">Twitter</span></a></li>
+        {% endif %}
+
+        <li><a class="fa fa-2x fa-tags" href="/blog"><span class="description">Blog</span></a></li>
+
+        <li><a class="fa fa-2x fa-product-hunt" href="/projects"><span class="description">Projects</span></a></li>
+
+        {% if site.medium_username %}
+        <li><a class="fa fa-2x fa-medium" href="https://medium.com/@{{ site.medium_username }}"><span
+                class="description">Medium</span></a></li>
+        {% endif %}
+        {% if site.email %}
+        <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description">Email</span></a>
+        </li>
+        {% endif %}
+    </ul>
+</div>
+
+</body>
+</html>
