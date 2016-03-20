@@ -1,16 +1,24 @@
 <!-- Pagination -->
 <ul class="actions pagination">
 
-    {% if paginator.next_page %}
-    <li><a href="{{ paginator.next_page_path }}" class="button big next">Next Page</a></li>
+    {% if paginator.next_page%}
+    <li><a href="{{ paginator.next_page_path }}" class="button big previous">قدیمی تر</a></li>
     {% else %}
-    <li><a class="disabled button big next">Next Page</a></li>
+    <li><a class="disabled button big previous">قدیمی تر</a></li>
     {% endif %}
-    <!--<li><a class="disabled button big">1 از 10</a></li>-->
+
+    <li><a class="disabled button big" style="color: #3c3b3b !important;">
+        صفحه
+        {{ paginator.page }}
+        از
+        {{ paginator.total_pages }}
+
+    </a></li>
+
     {% if paginator.previous_page %}
-    <li><a href="{{ paginator.previous_page_path }}" class="button big previous">Previous Page</a></li>
+    <li><a href="{{ paginator.previous_page_path }}" class="button big next">جدید تر</a></li>
     {% else %}
-    <li><a class="disabled button big previous">Previous Page</a></li>
+    <li><a class="disabled button big next">جدید تر</a></li>
     {% endif %}
 </ul>
 

@@ -3,7 +3,7 @@
 
     <!-- Intro -->
     <section id="intro">
-        <a href="#" class="logo"><img src="images/logo.jpg" alt=""/></a>
+        <a href="/blog" class="logo"><img src="/assets/images/17301305.png" alt=""/></a>
         <header>
             <h2>آینده همین الان است!</h2>
             <p>با ما باشید</p>
@@ -21,33 +21,44 @@
         </div>
     </section>
 
-    <!-- Posts List -->
+    <!-- Posts List --
     <section>
         <ul class="posts">
-            {% for post in site.posts limit:3%}
+            {% for post in site.posts limit:0%}
             {% include posts_list_item.html %}
             {% endfor %}
         </ul>
-    </section>
+    </section>-->
 
     <!-- About -->
     <section class="blurb">
         <h2>درباره</h2>
-        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet
-            placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
+        <p>{{ site.about }}</p>
         <ul class="actions">
-            <li><a href="#" class="button">بیشتر</a></li>
+            <li><a href="/about" class="button">بیشتر</a></li>
         </ul>
     </section>
 
     <!-- Footer -->
     <section id="footer">
         <ul class="icons">
-            <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
-            <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+            {% if site.twitter %}
+            <li><a href="{{ site.twitter }}" class="fa-twitter"><span class="label">Twitter</span></a></li>
+            {% endif %}
+
+            {% if site.facebook %}
+            <li><a href="{{ site.facebook }}" class="fa-facebook"><span class="label">Facebook</span></a></li>
+            {% endif %}
+
+            {% if site.instagram %}
+            <li><a href="{{ site.instagram }}" class="fa-instagram"><span class="label">Instagram</span></a></li>
+            {% endif %}
+
+            <li><a href="/feed.xml" class="fa-rss"><span class="label">RSS</span></a></li>
+
+            {% if site.email %}
+            <li><a href="mailto:{{ site.email }}" class="fa-envelope"><span class="label">Email</span></a></li>
+            {% endif %}
         </ul>
         <p class="copyright">&copy; Design: <a href="http://html5up.net">HTML5 UP</a>. RTL: <a
                 href="{{ site.base_url }}">ZAAFERANI</a>.</p>

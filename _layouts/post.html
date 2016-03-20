@@ -5,40 +5,55 @@ layout: blog
 <article class="post">
     <header>
         <div class="title">
-            <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
-            <p>یک توضیح مختصر</p>
+            <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+            <!--<p>یک توضیح مختصر</p>-->
         </div>
         <div class="meta">
-            <time class="published" datetime="2015-11-01">1 فروردین 1395</time>
-            <a href="#" class="author">
-                <span class="name">حسین زعفرانی</span>
-                <img src="images/avatar.jpg" alt=""/>
+            <time class="published" datetime="2015-11-01">{{ page.date | jdate: "%A %e %b %Y"}}</time>
+            {% if page.author %}
+            {% for author in site.data.authors %}
+            {% if author.username == page.author %}
+            <a href="https://github.com/{{ author.github }}" class="author" target="_blank">
+                <span class="name">{{ author.name }}</span>
+                <img src="{{ author.avatar }}" alt="{{ author.name }}"/>
             </a>
+            {% break %}
+            {% endif %}
+            {% endfor %}
+            {% endif %}
         </div>
     </header>
-    <a href="#" class="image featured"><img src="images/pic02.jpg" alt=""/></a>
+    {% if page.image %}
+    <a href="#" class="image featured"><img src="{{ page.image }}" alt="{{ page.title }}"/></a>
+    {% endif %}
     <p>
         {{ content }}
     </p>
+
+    <div style="border-top: 1px solid #e8e8e8;padding: 1em 0">موضوع:
+        {% for cat in page.categories %}
+        <a href="/blog/category/{{ cat }}">{{ cat }}</a>
+        {% unless forloop.last %} - {% endunless %}
+        {% endfor %}
+        <br>برچسب:
+        {% for tag in page.tags %}
+        <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
+        {% unless forloop.last %} - {% endunless %}
+        {% endfor %}
+    </div>
     <footer>
-        <!--<ul class="stats">-->
-        <!--<li><a href="#">General</a></li>-->
-        <!--<li><a href="#" class="icon fa-heart">28</a></li>-->
-        <!--<li><a href="#" class="icon fa-comment">128</a></li>-->
-        <!--</ul>-->
         {% include share.html %}
     </footer>
 </article>
-<div style="border-top:1px dotted;display: none">
-    <p>
-        {% if page.next %}
-        <a href="{{ page.next.url }}" style="float: left">
-            {{ page.next.title }} >> </a>
-        {% endif %}
 
-        {% if page.previous %}
-        <a href="{{ page.previous.url }}" style="margin-right:0px;">
-            &#60&#60 {{ page.previous.title }}</a>
-        {% endif %}
-    </p>
-</div>
+<!-- Pagination -->
+<ul class="actions pagination">
+
+    {% if page.previous %}
+    <li><a href="{{ page.previous.url }}" class="button big previous">{{ page.previous.title }}</a></li>
+    {% endif %}
+
+    {% if page.next %}
+    <li><a href="{{ page.next.url }}" class="button big next">{{ page.next.title }}</a></li>
+    {% endif %}
+</ul>

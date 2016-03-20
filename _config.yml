@@ -9,13 +9,22 @@
 title: سایت شخصی حسین زعفرانی
 name: حسین زعفرانی
 email: zaaferani@hotmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Nifty little description
+description: >
+  توضیحات سایت
+about: > # this means to ignore newlines until "baseurl:"
+  حسین زعفرانی هستم
+  در این مکان توضیحاتی در مورد خودم خواهم نوشت
 #url: http://hossein-zaaferani.ir # the base hostname & protocol for your site
 base_url: http://hossein-zaaferani.ir
 blog: http://hossein-zaaferani.ir/blog
+
+base_url: http://127.0.0.1:4000
+blog: http://127.0.0.1:4000/blog
 domain: hossein-zaaferani.ir
 github_username: hos3ein
+twitter: '#'
+facebook: '#'
+instagram: '#'
 
 excerpt_separator: <!--more-->
 
@@ -26,4 +35,4 @@ permalink: /blog/:categories/:year-:month-:day/:title
 paginate: 3
 paginate_path: "/blog/page:num/"
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jalalidate]

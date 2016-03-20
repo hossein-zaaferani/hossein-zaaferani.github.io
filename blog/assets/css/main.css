@@ -2072,10 +2072,10 @@ sup {
 }
 
 blockquote {
-    border-left: solid 4px rgba(160, 160, 160, 0.3);
+    border-right: solid 4px rgba(160, 160, 160, 0.3);
     font-style: italic;
     margin: 0 0 2em 0;
-    padding: 0.5em 0 0.5em 2em;
+    padding: 0.5em 2em 0.5em 0;
 }
 
 code {
@@ -2276,8 +2276,8 @@ input[type="reset"]:before,
 input[type="button"]:before,
 button:before,
 .button:before {
-    left: -1em;
-    padding: 0 0 0 0.75em;
+    right: -1em;
+    padding: 0 0.75em 0 0;
 }
 
 input[type="submit"]:after,
@@ -2285,8 +2285,8 @@ input[type="reset"]:after,
 input[type="button"]:after,
 button:after,
 .button:after {
-    left: 1em;
-    padding: 0 0.75em 0 0;
+    right: 1em;
+    padding: 0 0 0 0.75em;
 }
 
 input[type="submit"].fit,
@@ -2752,6 +2752,10 @@ ul.actions li:last-child {
     padding-left: 0;
 }
 
+ul.actions.pagination {
+    text-align: center;
+}
+
 ul.actions.pagination .next {
     text-decoration: none;
 }
@@ -2767,7 +2771,7 @@ ul.actions.pagination .next:after {
 }
 
 ul.actions.pagination .next:after {
-    content: '\f054';
+    content: '\f053';
 }
 
 ul.actions.pagination .previous {
@@ -2785,7 +2789,7 @@ ul.actions.pagination .previous:before {
 }
 
 ul.actions.pagination .previous:before {
-    content: '\f053';
+    content: '\f054';
 }
 
 @media screen and (max-width: 1280px) {

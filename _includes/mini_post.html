@@ -2,8 +2,19 @@
 <article class="mini-post">
     <header>
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <time class="published" datetime="2015-10-20">3 خرداد 1395</time>
-        <a href="{{ post.url }}" class="author"><img src="images/avatar.jpg" alt=""/></a>
+        <time class="published" datetime="{{ post.date }}">{{ post.date | jdate: "%A %e %b %Y"}}</time>
+
+        {% if post.author %}
+        {% for author in site.data.authors %}
+        {% if author.username == post.author %}
+        <a href="https://github.com/{{ author.github }}" class="author" target="_blank">
+            <img src="{{ author.avatar }}" alt="{{ author.name }}"/>
+        </a>
+        {% break %}
+        {% endif %}
+        {% endfor %}
+        {% endif %}
     </header>
-    <a href="{{ post.url }}" class="image"><img src="images/pic04.jpg" alt=""/></a>
+    <a href="{{ post.url }}" class="image"><img src="{{ post.image }}" alt="{{ post.title }}"/></a>
+
 </article>

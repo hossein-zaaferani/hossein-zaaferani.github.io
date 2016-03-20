@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="stylesheet" href="{{ '/css/front.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/css/front.css' | prepend: site.baseurl }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -27,9 +27,19 @@
         <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span
                 class="description">GitHub</span></a></li>
         {% endif %}
-        {% if site.twitter_username %}
-        <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span
-                class="description">Twitter</span></a></li>
+
+        {% if site.twitter %}
+        <li><a class="fa fa-2x fa-twitter" href="{{ site.twitter }}"><span class="description">Twitter</span></a></li>
+        {% endif %}
+
+        {% if site.facebook %}
+        <li><a class="fa fa-2x fa-facebook" href="{{ site.facebook }}"><span class="description">Facebook</span></a>
+        </li>
+        {% endif %}
+
+        {% if site.instagram %}
+        <li><a class="fa fa-2x fa-instagram" href="{{ site.instagram }}"><span class="description">Instagram</span></a>
+        </li>
         {% endif %}
 
         <li><a class="fa fa-2x fa-tags" href="/blog"><span class="description">Blog</span></a></li>

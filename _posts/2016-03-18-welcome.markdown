@@ -2,10 +2,14 @@
 layout: post
 title:  "پیشگفتار"
 date:   2016-03-18 09:47:56 +0330
-categories: jekyll
-tags: [jekyll]
+categories: jekyll two three
+author: admin
+image: /blog/images/pic02.jpg
+tags: [jekyll, two tag, three tag]
 ---
 بالاخره فرصتی پیش اومد تا من هم سایت خودم رو داشته باشم و بتونم مطالب خودم رو توش بنویسم و در اختیار بقیه قرار بدم.
+
+<!--more-->
 
 <span>**[Jekyll][jekyll]{:target="_blank"}**</span> رو دوست دارم و این جا رو هم با همین سیستم آماده کردم.
 

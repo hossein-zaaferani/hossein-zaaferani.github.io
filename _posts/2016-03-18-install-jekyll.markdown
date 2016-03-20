@@ -3,9 +3,12 @@ layout: post
 title:  "آموزش Jekyll"
 date:   2016-03-18 10:23:56 +0330
 categories: jekyll
+author: admin
 tags: [jekyll]
 ---
 [Jekyll][jekyll]{:target="_blank"} رو از [اینجا][PortableJekyll]{:target="_blank"} دانلود کنید و طبق [این آموزش][jekyll_path]{:target="_blank"} مسیرها رو تنظیم کنید.
+
+<!--more-->
 
 برای ساخت یک سایت باید دستور `jekyll new weblog` رو توی `CMD` وارد کنید.
 
