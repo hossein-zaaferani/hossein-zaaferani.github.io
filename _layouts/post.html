@@ -10,21 +10,24 @@ layout: blog
         </div>
         <div class="meta">
             <time class="published" datetime="2015-11-01">{{ page.date | jdate: "%A %e %b %Y"}}</time>
+
             {% if page.author %}
-            {% for author in site.data.authors %}
-            {% if author.username == page.author %}
+            {% assign author = site.data.authors[page.author] %}
+            {% if author %}
             <a href="https://github.com/{{ author.github }}" class="author" target="_blank">
                 <span class="name">{{ author.name }}</span>
                 <img src="{{ author.avatar }}" alt="{{ author.name }}"/>
             </a>
-            {% break %}
+            {% else %}
+            <a href="#" class="author">
+                <span class="name">{{ page.author }}</span>
+            </a>
             {% endif %}
-            {% endfor %}
             {% endif %}
         </div>
     </header>
     {% if page.image %}
-    <a href="#" class="image featured"><img src="{{ page.image }}" alt="{{ page.title }}"/></a>
+    <a href="{{ page.url }}" class="image featured"><img src="{{ page.image }}" alt="{{ page.title }}"/></a>
     {% endif %}
     <p>
         {{ content }}
@@ -32,13 +35,20 @@ layout: blog
 
     <div style="border-top: 1px solid #e8e8e8;padding: 1em 0">موضوع:
         {% for cat in page.categories %}
-        <a href="/blog/category/{{ cat }}">{{ cat }}</a>
-        {% unless forloop.last %} - {% endunless %}
+        {% assign cat_name = site.data.categories[cat] %}
+        {% if cat_name %}
+        <a href="/blog/category/{{ cat }}">{{ cat_name.name }}</a>
+        {% unless forloop.last %} , {% endunless %}
+        {% endif %}
         {% endfor %}
-        <br>برچسب:
+
+        <br>برچسب ها:
         {% for tag in page.tags %}
-        <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
-        {% unless forloop.last %} - {% endunless %}
+        {% assign tag_name = site.data.tags[tag] %}
+        {% if tag_name %}
+        <a href="/blog/tag/{{ tag }}">{{ tag_name.name }}</a>
+        {% unless forloop.last %} , {% endunless %}
+        {% endif %}
         {% endfor %}
     </div>
     <footer>

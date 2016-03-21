@@ -7,21 +7,22 @@
 
 <!-- Wrapper -->
 <div id="wrapper">
-	{% include header.html %}
-	
+    {% include header.html %}
+
     <!-- Main -->
     <div id="main">
-    {{ content }}
+        {{ content }}
     </div>
 
     {% include sidebar.html %}
 </div>
 
 <!-- Scripts -->
-<script src="{{ '/blog/assets/js/jquery.min.js' | prepend: site.base_url }}"></script>
-<script src="{{ '/blog/assets/js/skel.min.js' | prepend: site.base_url }}"></script>
-<script src="{{ '/blog/assets/js/util.js' | prepend: site.base_url }}"></script>
-<!--[if lte IE 8]><script src="{{ '/blog/assets/js/ie/respond.min.js' | prepend: site.base_url }}"></script><![endif]-->
+<script src="{{ '/assets/js/jquery.min.js' | prepend: site.base_url }}"></script>
+<script src="{{ '/assets/js/skel.min.js' | prepend: site.base_url }}"></script>
+<script src="{{ '/assets/js/util.js' | prepend: site.base_url }}"></script>
+<!--[if lte IE 8]>
+<script src="{{ '/assets/js/ie/respond.min.js' | prepend: site.base_url }}"></script><![endif]-->
 <script src="{{ '/blog/assets/js/main.js' | prepend: site.base_url }}"></script>
 </body>
 

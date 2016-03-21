@@ -1,0 +1,134 @@
+.object {
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.25s ease-in-out; /** Firefox **/
+    -o-transition: all 0.25s ease-in-out; /** Opera **/
+}
+
+#main-container-image {
+    width: 100%;
+}
+
+.work figure {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    direction: rtl;
+    float: right;
+    width: calc(100% / 4 - 30px);
+    height: auto;
+    position: relative;
+    padding: 10px !important;
+    margin: 15px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    background-color: #FaFaFa;
+}
+
+.work figure.white dl {
+    background: #FaFaFa;
+}
+
+.work figure a img {
+    width: 100%;
+}
+
+.work figure dl {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 10px;
+    margin: 0;
+    line-height: 2.5;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+.work figure:hover dl {
+    opacity: .95;
+}
+
+.work figure dl dt {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 13px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #666;
+    height: 20px;
+    line-height: 100%;
+}
+
+.work figure dl dd {
+    margin-left: 0;
+    font-size: 12px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 150%;
+    color: #000;
+}
+
+.part-info {
+    float: left;
+    width: 100%;
+    line-height: 44px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    /*height: 44px;*/
+}
+
+@media only screen and (max-width: 1200px) {
+    .work figure {
+        width: calc(100% / 3 - 30px);
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .work figure {
+        width: calc(100% / 2 - 30px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .work figure {
+        width: calc(100% - 30px);
+    }
+}
+
+/*My Style*/
+a.projects-more:hover:active {
+    background-color: #B3E5FC;
+}
+
+a.projects-more:hover {
+    border-color: #0091EA;
+    color: #0091EA;
+}
+
+a.projects-more {
+    padding: 0.5em 2em;
+    border: 1px solid #9E9E9E;
+    text-decoration: blink;
+    color: #9E9E9E;
+}
+
+#me a.projects-more {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+}

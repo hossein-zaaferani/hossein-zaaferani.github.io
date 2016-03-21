@@ -1,2 +1,11 @@
-﻿- slug: jekyll
-  name: Jekyll
+﻿jekyll:
+  name: jekyll
+
+android:
+  name: اندروید
+
+tutorial:
+  name: آموزش
+
+android_tutorial:
+  name: آموزش اندروید

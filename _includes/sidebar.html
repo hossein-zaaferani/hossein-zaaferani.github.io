@@ -3,7 +3,7 @@
 
     <!-- Intro -->
     <section id="intro">
-        <a href="/blog" class="logo"><img src="/assets/images/17301305.png" alt=""/></a>
+        <a href="/blog" class="logo"><img src="/assets/images/pic09.jpg" alt=""/></a>
         <header>
             <h2>آینده همین الان است!</h2>
             <p>با ما باشید</p>
@@ -43,22 +43,35 @@
     <!-- Footer -->
     <section id="footer">
         <ul class="icons">
-            {% if site.twitter %}
-            <li><a href="{{ site.twitter }}" class="fa-twitter"><span class="label">Twitter</span></a></li>
+            {% if site.twitter_username %}
+            <li><a href="http://twitter.com/{{ site.twitter_username }}" class="fa-twitter"><span
+                    class="label">Twitter</span></a></li>
             {% endif %}
 
-            {% if site.facebook %}
-            <li><a href="{{ site.facebook }}" class="fa-facebook"><span class="label">Facebook</span></a></li>
+            {% if site.facebook_username %}
+            <li><a href="http://facebook.com/{{ site.facebook_username }}" class="fa-facebook"><span
+                    class="label">Facebook</span></a></li>
             {% endif %}
 
-            {% if site.instagram %}
-            <li><a href="{{ site.instagram }}" class="fa-instagram"><span class="label">Instagram</span></a></li>
+            {% if site.instagram_username %}
+            <li><a href="http://instagram.com/{{ site.instagram_username }}" class="fa-instagram"><span
+                    class="label">Instagram</span></a></li>
             {% endif %}
 
             <li><a href="/feed.xml" class="fa-rss"><span class="label">RSS</span></a></li>
 
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}" class="fa-envelope"><span class="label">Email</span></a></li>
+            {% endif %}
+
+            {% if site.github_username %}
+            <li><a href="https://github.com/{{ site.github_username }}" class="fa-github"><span
+                    class="label">Github</span></a></li>
+            {% endif %}
+
+            {% if site.google_plus_username %}
+            <li><a href="https://plus.google.com/{{ site.google_plus_username }}" class="fa-google-plus"><span
+                    class="label">Google Plus</span></a></li>
             {% endif %}
         </ul>
         <p class="copyright">&copy; Design: <a href="http://html5up.net">HTML5 UP</a>. RTL: <a

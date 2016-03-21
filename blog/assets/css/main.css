@@ -1,9 +1,9 @@
-@import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+@import url(/assets/css/font-awesome.min.css);
+/*@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");*/
 
 @font-face {
     font-family: 'Samim-persian';
-    src: url('../fonts/Samim-persian-digits-overwrite.woff') format('woff');
+    src: url('/assets/fonts/Samim-persian-digits-overwrite.woff') format('woff');
 }
 
 /*

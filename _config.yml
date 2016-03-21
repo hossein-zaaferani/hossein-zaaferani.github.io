@@ -22,9 +22,10 @@ blog: http://hossein-zaaferani.ir/blog
 #blog: http://127.0.0.1:4000/blog
 domain: hossein-zaaferani.ir
 github_username: hos3ein
-twitter: '#'
-facebook: '#'
-instagram: '#'
+#google_plus_username: '#'
+#twitter_username: '#'
+#facebook_username: '#'
+#instagram_username: '#'
 
 excerpt_separator: <!--more-->
 

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
+title: درباره من
 permalink: /about/
 ---
 
-متن کامل قسمت درباره ما
+متن کامل قسمت درباره من

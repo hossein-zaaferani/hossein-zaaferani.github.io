@@ -8,11 +8,11 @@ title: پروژه ها
     <a href="/projects/{{ project.slug }}/" class="list-group-item no-padding">
         <div class="media">
             <div class="pull-left">
-                <img class="media-object" src="/projects/{{ project.slug }}/{{ project.cover-image }}"
-                     alt="{{ project.title }}" width="150">
+                <img class="media-object" src="/projects/{{ project.slug }}/{{ project.logo }}"
+                     alt="{{ project.name }}" width="150">
             </div>
             <div class="media-body">
-                <h4 class="media-heading">{{ project.title }}</h4>
+                <h4 class="media-heading">{{ project.name }}</h4>
                 {% if project.subtitle %}<p class="hidden-xs">{{ project.subtitle }}</p>{% endif %}
             </div>
         </div>

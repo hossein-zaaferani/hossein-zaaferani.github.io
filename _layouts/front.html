@@ -7,55 +7,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/front.css' | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--[if lte IE 8]>
+    <script src="{{ '/assets/js/ie/html5shiv.js' | prepend: site.base_url }}"></script><![endif]-->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.base_url }}"/>
+    <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | prepend: site.base_url }}"/>
+    <noscript>
+        <link rel="stylesheet" href="{{ '/assets/css/noscript.css' | prepend: site.base_url }}"/>
+    </noscript>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="{{ '/assets/css/ie8.css' | prepend: site.base_url }}"/><![endif]-->
+
 </head>
 <body>
 
-<div class="content">
+<!-- Wrapper-->
+<div id="wrapper">
 
-    <img src="/assets/images/background.jpg" id="fullscreen">
+    <!-- Nav -->
+    <nav id="nav">
+        <a href="#me" class="icon fa-home active"><span>خانه</span></a>
+        <a href="#work" class="icon fa-folder"><span>نمونه کارها</span></a>
+        <a href="/blog" class="icon fa-tags"><span>بلاگ</span></a>
 
-
-    <img src="/assets/images/17301305.png" id="avatar">
-
-    <h1>{{ site.name }}</h1>
-    <h3>{{ site.description }}</h3>
-
-    <ul>
         {% if site.github_username %}
-        <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span
-                class="description">GitHub</span></a></li>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank"
+           class="icon fa-github"><span>Github</span></a>
         {% endif %}
 
-        {% if site.twitter %}
-        <li><a class="fa fa-2x fa-twitter" href="{{ site.twitter }}"><span class="description">Twitter</span></a></li>
+        {% if site.twitter_username %}
+        <a href="http://twitter.com/{{ site.twitter_username }}" class="icon fa-twitter"><span>Twitter</span></a>
         {% endif %}
 
-        {% if site.facebook %}
-        <li><a class="fa fa-2x fa-facebook" href="{{ site.facebook }}"><span class="description">Facebook</span></a>
-        </li>
+        {% if site.facebook_username %}
+        <a href="http://facebook.com/{{ site.facebook_username }}" class="icon fa-facebook"><span>Facebook</span></a>
         {% endif %}
 
-        {% if site.instagram %}
-        <li><a class="fa fa-2x fa-instagram" href="{{ site.instagram }}"><span class="description">Instagram</span></a>
-        </li>
+        {% if site.instagram_username %}
+        <a href="http://instagram.com/{{ site.instagram_username }}"
+           class="icon fa-instagram"><span>Instagram</span></a>
         {% endif %}
 
-        <li><a class="fa fa-2x fa-tags" href="/blog"><span class="description">Blog</span></a></li>
-
-        <li><a class="fa fa-2x fa-product-hunt" href="/projects"><span class="description">Projects</span></a></li>
-
-        {% if site.medium_username %}
-        <li><a class="fa fa-2x fa-medium" href="https://medium.com/@{{ site.medium_username }}"><span
-                class="description">Medium</span></a></li>
+        {% if site.google_plus_username %}
+        <a href="http://plus.google.com/{{ site.google_plus_username }}"
+           class="icon fa-google-plus"><span>Google Plus</span></a>
         {% endif %}
+
         {% if site.email %}
-        <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description">Email</span></a>
-        </li>
+        <a href="mailto:{{ site.email }}" class="icon fa-envelope"><span>Email</span></a>
         {% endif %}
-    </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Me -->
+        <article id="me" class="panel">
+            <header>
+                <h1>{{ site.name }}</h1>
+                <p>{{ site.description }}</p>
+                <a href="/blog" class="projects-more object">بلاگ</a>
+            </header>
+            <a href="#work" class="jumplink pic">
+                <span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+                <img src="/assets/images/me.jpg" alt="{{ site.name }}"/>
+            </a>
+        </article>
+
+        <!-- Work -->
+        <article id="work" class="panel">
+            <header>
+                <h2>نمونه کارها</h2>
+            </header>
+            <div id="main-container-image">
+
+                <div class="work">
+                    {% for project in site.data.projects %}
+                    <figure class="white">
+                        <a href="/projects/{{ project.slug }}">
+                            <img src="/projects/{{ project.slug }}/{{ project.logo }}" alt="{{ project.name }}">
+                            <dl>
+                                <dt>{{ project.name }}</dt>
+                                <dd>{{ project.description }}</dd>
+                            </dl>
+                        </a>
+                        <div class="part-info">{{ project.name }}</div>
+                    </figure>
+                    {% endfor %}
+                </div>
+
+            </div>
+            <div style="clear: both"></div>
+
+            <div style="text-align: center;margin: 10px 0">
+                <a href="/projects" class="projects-more object">بیشتر</a>
+            </div>
+        </article>
+
+        <!-- Contact -->
+        <article id="contact" class="panel">
+            <header>
+                <h2>Contact Me</h2>
+            </header>
+        </article>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <ul class="copyright">
+            <li>&copy; Untitled.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+
 </div>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/skel-viewport.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
 
 </body>
 </html>

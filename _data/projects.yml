@@ -1,7 +1,13 @@
 ﻿- slug: cafejok
-  name: نرم افزار اندروید کافه جوک
-  cover-image: icon.png
+  name: نرم افزار اندروید
+  description: >
+    توضیحات چند خطی در مورد برنامه
+    اگر چه اینترها کار نمی کند
+    اما این خط سوم اینتر می باشد
+    پایان
+  logo: icon.png
 
 - slug: contacts
   name: نرم افزار اندروید دفترچه تلفن
-  cover-image: contacts.png
+  description: توضیحات
+  logo: contacts.png

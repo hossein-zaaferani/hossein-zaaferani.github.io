@@ -3,8 +3,7 @@ layout: blog
 ---
 
 <header id="post-header">
-    <h1 id="post-title">{{ page.category }}</h1>
-    <h4 id="post-subtitle">Articles by category</h4>
+    <h1 id="post-title">مقاله ها با موضوع: {{ page.title}}</h1>
 </header>
 
 <div id="post-content">
@@ -14,7 +13,7 @@ layout: blog
     {% endfor %}
     {% else %}
     <article class="post txt-center">
-        <p>There are no articles in the category: <strong>{{ page.title }}</strong></p>
+        <p>هیچ مقاله ای با موضوع<strong> {{ page.title }} </strong>پیدا نشد!</p>
     </article>
     {% endif %}
 </div>
