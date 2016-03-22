@@ -44,11 +44,7 @@ layout: blog
 
         <br>برچسب ها:
         {% for tag in page.tags %}
-        {% assign tag_name = site.data.tags[tag] %}
-        {% if tag_name %}
-        <a href="/blog/tag/{{ tag }}">{{ tag_name.name }}</a>
-        {% unless forloop.last %} , {% endunless %}
-        {% endif %}
+        <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
         {% endfor %}
     </div>
     <footer>

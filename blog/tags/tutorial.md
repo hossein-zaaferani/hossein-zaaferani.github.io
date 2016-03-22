@@ -1,6 +1,6 @@
 ---
 layout: blog_by_tag
 title: آموزش
-tag: tutorial
+tag: آموزش
 permalink: /blog/tag/آموزش
 ---
