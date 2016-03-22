@@ -3,7 +3,7 @@ layout: post
 title: آموزش اندروید قسمت سوم
 date:   2016-03-18 10:23:56 +0330
 categories: android-tutorial
-tags: [آموزش, آموزش_اندروید, اندروید_]
+tags: [آموزش, آموزش_اندروید, اندروید]
 image: /blog/posts/android-tutorial-3/pic03.jpg
 author: admin
 ---

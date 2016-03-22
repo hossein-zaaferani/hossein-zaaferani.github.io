@@ -3,7 +3,7 @@ layout: post
 title: آموزش اندروید قسمت اول
 date:   2016-03-16 08:00:12 +0330
 categories: android-tutorial
-tags: [آموزش, آموزش_اندروید, اندروید_]
+tags: [آموزش, آموزش_اندروید, اندروید]
 image: /blog/posts/android-tutorial-1/pic01.jpg
 author: admin
 ---

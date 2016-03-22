@@ -45,6 +45,7 @@ layout: blog
         <br>برچسب ها:
         {% for tag in page.tags %}
         <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
+        {% unless forloop.last %} , {% endunless %}
         {% endfor %}
     </div>
     <footer>
