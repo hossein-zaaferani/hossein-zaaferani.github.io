@@ -9,7 +9,9 @@ layout: blog
             <!--<p>یک توضیح مختصر</p>-->
         </div>
         <div class="meta">
-            <time class="published" datetime="2015-11-01">{{ page.date | jdate: "%A %e %b %Y"}}</time>
+            <time class="published" datetime="{{ page.date | date: '%Y-%m-%d' }}">
+                {{ page.date | jdate: "%A %e %b%Y"}}
+            </time>
 
             {% if page.author %}
             {% assign author = site.data.authors[page.author] %}

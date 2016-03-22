@@ -6,7 +6,9 @@
             <!--<p>یک توضیح مختصر</p>-->
         </div>
         <div class="meta">
-            <time class="published" datetime="2015-11-01">{{ post.date | jdate: "%A %e %b %Y"}}</time>
+            <time class="published" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+                {{ post.date | jdate: "%A %e %b %Y"}}
+            </time>
 
             {% if post.author %}
             {% assign author = site.data.authors[post.author] %}

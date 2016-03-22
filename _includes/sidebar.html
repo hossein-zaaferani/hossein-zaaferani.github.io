@@ -53,9 +53,9 @@
                     class="label">Facebook</span></a></li>
             {% endif %}
 
-            {% if site.instagram_username %}
-            <li><a href="http://instagram.com/{{ site.instagram_username }}" class="fa-instagram"><span
-                    class="label">Instagram</span></a></li>
+            {% if site.github_username %}
+            <li><a href="https://github.com/{{ site.github_username }}" class="fa-github"><span
+                    class="label">Github</span></a></li>
             {% endif %}
 
             <li><a href="/feed.xml" class="fa-rss"><span class="label">RSS</span></a></li>
@@ -64,14 +64,14 @@
             <li><a href="mailto:{{ site.email }}" class="fa-envelope"><span class="label">Email</span></a></li>
             {% endif %}
 
-            {% if site.github_username %}
-            <li><a href="https://github.com/{{ site.github_username }}" class="fa-github"><span
-                    class="label">Github</span></a></li>
-            {% endif %}
-
             {% if site.google_plus_username %}
             <li><a href="https://plus.google.com/{{ site.google_plus_username }}" class="fa-google-plus"><span
                     class="label">Google Plus</span></a></li>
+            {% endif %}
+
+            {% if site.instagram_username %}
+            <li><a href="http://instagram.com/{{ site.instagram_username }}" class="fa-instagram"><span
+                    class="label">Instagram</span></a></li>
             {% endif %}
         </ul>
         <p class="copyright">&copy; Design: <a href="http://html5up.net">HTML5 UP</a>. RTL: <a

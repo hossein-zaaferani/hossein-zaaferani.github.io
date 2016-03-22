@@ -2,18 +2,19 @@
 <article class="mini-post">
     <header>
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <time class="published" datetime="{{ post.date }}">{{ post.date | jdate: "%A %e %b %Y"}}</time>
+        <time class="published" datetime="{{ post.date | date: '%Y-%m-%d' }}}">
+            {{ post.date | jdate: "%A %e %b %Y"}}
+        </time>
 
         {% if post.author %}
-        {% for author in site.data.authors %}
-        {% if author.username == post.author %}
+        {% assign author = site.data.authors[post.author] %}
+        {% if author %}
         <a href="https://github.com/{{ author.github }}" class="author" target="_blank">
             <img src="{{ author.avatar }}" alt="{{ author.name }}"/>
         </a>
-        {% break %}
         {% endif %}
-        {% endfor %}
         {% endif %}
+
     </header>
     <a href="{{ post.url }}" class="image"><img src="{{ post.image }}" alt="{{ post.title }}"/></a>
 
