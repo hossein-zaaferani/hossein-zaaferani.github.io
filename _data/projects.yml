@@ -1,5 +1,15 @@
-﻿- slug: cafejok
-  name: نرم افزار اندروید
+﻿- slug: sisadosiosestory
+  name: نرم افزار 333 داستان
+  description: توضیحات
+  logo: icon.png
+
+- slug: contacts.plus
+  name: نرم افزار دفترتلفن+
+  description: توضیحات
+  logo: icon.png
+
+- slug: cafejok
+  name: نرم افزار کافه جوک
   description: >
     توضیحات چند خطی در مورد برنامه
     اگر چه اینترها کار نمی کند
@@ -7,7 +17,7 @@
     پایان
   logo: icon.png
 
-- slug: contacts
-  name: نرم افزار اندروید دفترچه تلفن
-  description: توضیحات
-  logo: contacts.png
+- slug: pichak
+  name: نرم افزار پیچک
+  description: کلیپ های کوتاه طنز
+  logo: ic_launcher_512.png
