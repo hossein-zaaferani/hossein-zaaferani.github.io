@@ -7,7 +7,11 @@ author: admin
 image: /blog/posts/install-jekyll/pic07.png
 tags: [jekyll]
 ---
+
+
 [Jekyll][jekyll]{:target="_blank"} رو از [اینجا][PortableJekyll]{:target="_blank"} دانلود کنید و طبق [این آموزش][jekyll_path]{:target="_blank"} مسیرها رو تنظیم کنید.
+
+مطالعه [این صفحه][mehdix-jekyll]{:target="_blank"} را نیز پیشنهاد می کنم._
 
 <!--more-->
 
@@ -17,12 +21,18 @@ tags: [jekyll]
 
 با دستور `jekyll serve` صفحات سایت شما ساخته میشه و با آدرسی که در `CMD` به شما نشان داده خواهد شد می تونید سایت تون رو ببینید.
 
-به عنوان مثال:
+به عنوان مثال: `http://127.0.0.1:4000`
 
-`http://127.0.0.1:4000`
+مطالب سایت در داخل پوشه `_posts` قرار می گیرند.
 
+برای صفحه بندی مطالب می تونید به [این لینک][mehdix-pagination]{:target="_blank"} مراجعه کنید.
+
+برای گروه بندی و برچسب زدن به مطالب هم می تونید به [این لینک][minddust-cat-tag]{:target="_blank"} مراجعه کنید.
 
 
 [jekyll]: https://jekyllrb.com
 [PortableJekyll]: https://github.com/madhur/PortableJekyll
 [jekyll_path]: https://github.com/madhur/PortableJekyll/wiki
+[mehdix-jekyll]: http://mehdix.ir/weblog-with-jekyll-and-github.html
+[mehdix-pagination]: http://mehdix.ir/pagination.html
+[minddust-cat-tag]: http://www.minddust.com/post/tags-and-categories-on-github-pages/
