@@ -3929,10 +3929,10 @@ body.is-menu-visible #menu {
 
 
 /*my style*/
-article.post p.post-content a:hover{
+article.post div.post-content a:hover{
     background-color: #80DEEA;
 }
-article.post p.post-content a{
+article.post div.post-content a{
     border-bottom: 3px solid #80DEEA;
     font-weight: bold;
     box-shadow: inset 0 -4px 0 #80DEEA;

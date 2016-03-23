@@ -31,9 +31,9 @@ layout: blog
     {% if page.image %}
     <a href="{{ page.url }}" class="image featured"><img src="{{ page.image }}" alt="{{ page.title }}"/></a>
     {% endif %}
-    <p class="post-content">
+    <div class="post-content">
         {{ content }}
-    </p>
+    </div>
 
     <div style="border-top: 1px solid #e8e8e8;padding: 1em 0">موضوع:
         {% for cat in page.categories %}
