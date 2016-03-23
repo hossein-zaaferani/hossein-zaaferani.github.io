@@ -11,7 +11,7 @@ tags: [jekyll]
 
 [Jekyll][jekyll]{:target="_blank"} رو از [اینجا][PortableJekyll]{:target="_blank"} دانلود کنید و طبق [این آموزش][jekyll_path]{:target="_blank"} مسیرها رو تنظیم کنید.
 
-مطالعه [این صفحه][mehdix-jekyll]{:target="_blank"} را نیز پیشنهاد می کنم._
+مطالعه [این صفحه][mehdix-jekyll]{:target="_blank"} را نیز پیشنهاد می کنم.
 
 <!--more-->
 
