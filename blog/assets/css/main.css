@@ -3931,7 +3931,7 @@ body.is-menu-visible #menu {
 /*my style*/
 article.post div.post-content a:hover{
     background-color: #80DEEA;
-    color: #000000;
+    color: #000000 !important;
 }
 article.post div.post-content a{
     border-bottom: 3px solid #80DEEA;
