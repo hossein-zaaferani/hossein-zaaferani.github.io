@@ -4,7 +4,7 @@ title:  "آموزش Jekyll"
 date:   2016-03-15 10:23:56 +0330
 categories: jekyll
 author: admin
-image: /blog/posts/install-jekyll/pic07.jpg
+image: /blog/posts/install-jekyll/pic07.png
 tags: [jekyll]
 ---
 [Jekyll][jekyll]{:target="_blank"} رو از [اینجا][PortableJekyll]{:target="_blank"} دانلود کنید و طبق [این آموزش][jekyll_path]{:target="_blank"} مسیرها رو تنظیم کنید.
