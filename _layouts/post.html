@@ -37,11 +37,8 @@ layout: blog
 
     <div style="border-top: 1px solid #e8e8e8;padding: 1em 0">موضوع:
         {% for cat in page.categories %}
-        {% assign cat_name = site.data.categories[cat] %}
-        {% if cat_name %}
-        <a href="/blog/category/{{ cat }}">{{ cat_name.name }}</a>
+        <a href="/blog/category/{{ cat }}">{{ cat }}</a>
         {% unless forloop.last %} , {% endunless %}
-        {% endif %}
         {% endfor %}
 
         <br>برچسب ها:

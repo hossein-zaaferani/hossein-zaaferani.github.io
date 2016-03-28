@@ -39,11 +39,8 @@
             <!--<li><a href="#" class="icon fa-comment">128</a></li>-->
             <div style="border-top: 1px solid #e8e8e8">موضوع:
                 {% for cat in post.categories %}
-                {% assign cat_name = site.data.categories[cat] %}
-                {% if cat_name %}
                 <a href="/blog/category/{{ cat }}">{{ cat_name.name }}</a>
                 {% unless forloop.last %} , {% endunless %}
-                {% endif %}
                 {% endfor %}
 
                 <br>برچسب ها:
