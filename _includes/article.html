@@ -39,7 +39,7 @@
             <!--<li><a href="#" class="icon fa-comment">128</a></li>-->
             <div style="border-top: 1px solid #e8e8e8">موضوع:
                 {% for cat in post.categories %}
-                <a href="/blog/category/{{ cat }}">{{ cat_name.name }}</a>
+                <a href="/blog/category/{{ cat }}">{{ cat }}</a>
                 {% unless forloop.last %} , {% endunless %}
                 {% endfor %}
 
