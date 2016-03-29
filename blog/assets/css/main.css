@@ -2681,11 +2681,11 @@ ol li {
 ul {
     list-style: disc;
     margin: 0 0 2em 0;
-    padding-left: 1em;
+    padding-right: 1em;
 }
 
 ul li {
-    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 ul.alt {
@@ -3485,12 +3485,12 @@ body {
 #header ul {
     list-style: none;
     margin: 0;
-    padding-left: 0;
+    padding-right: 0;
 }
 
 #header ul li {
     display: inline-block;
-    padding-left: 0;
+    padding-right: 0;
 }
 
 #header h1 {
