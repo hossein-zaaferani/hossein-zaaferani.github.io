@@ -1,14 +1,23 @@
-﻿- slug: sisadosiosestory
+﻿sisadosiosestory:
+  dir: sisadosiosestory
   name: نرم افزار 333 داستان
   description: توضیحات
   logo: icon.png
+  links:
+    - name: بازار
+      url: https://cafebazaar.ir/app/ir.blue.saffron.sisadosiosestory
 
-- slug: contacts.plus
+contacts.plus:
+  dir: contacts.plus
   name: نرم افزار دفترتلفن+
   description: توضیحات
   logo: icon.png
+  links:
+    - name: بازار
+      url: https://cafebazaar.ir/app/ir.blue.saffron.contacts.plus
 
-- slug: cafejok
+cafejok:
+  dir: cafejok
   name: نرم افزار کافه جوک
   description: >
     توضیحات چند خطی در مورد برنامه
@@ -16,8 +25,15 @@
     اما این خط سوم اینتر می باشد
     پایان
   logo: logo.png
+  links:
+    - name: بازار
+      url: https://cafebazaar.ir/app/ir.blue_saffron.cafejok
 
-- slug: pichak
+pichak:
+  dir: pichak
   name: نرم افزار پیچک
   description: کلیپ های کوتاه طنز
   logo: ic_launcher_512.png
+  links:
+    - name: مایکت
+      url: https://myket.ir/app/ir.blue_saffron.pichak

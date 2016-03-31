@@ -5,10 +5,10 @@ title: پروژه ها
 {% if site.data.projects.size > 0 %}
 <div class="list-group">
     {% for project in site.data.projects %}
-    <a href="/projects/{{ project.slug }}/" class="list-group-item no-padding">
+    <a href="/projects/{{ project.dir }}/" class="list-group-item no-padding">
         <div class="media">
             <div class="pull-left">
-                <img class="media-object" src="/projects/{{ project.slug }}/{{ project.logo }}"
+                <img class="media-object" src="/projects/{{ project.dir }}/{{ project.logo }}"
                      alt="{{ project.name }}" width="150">
             </div>
             <div class="media-body">
