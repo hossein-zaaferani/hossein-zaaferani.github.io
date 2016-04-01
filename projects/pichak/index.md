@@ -1,10 +1,5 @@
 ---
 layout: null
 title: پیچک
+package_name: pichak
 ---
-
-{% assign app = site.data.projects['pichak'] %}
-<img src="/projects/{{ app.dir }}/{{ app.logo }}" width="128">
-{% for link in app.links %}
-<a href="{{ link.url }}" target="_blank">{{ link.name }}</a><br>
-{% endfor %}
