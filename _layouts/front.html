@@ -84,8 +84,8 @@
                 <div class="work">
                     {% for project in site.data.projects %}
                     <figure class="white">
-                        <a href="/projects/{{ project.slug }}">
-                            <img src="/projects/{{ project.slug }}/{{ project.logo }}" alt="{{ project.name }}">
+                        <a href="/projects/{{ project.dir }}">
+                            <img src="/projects/{{ project.dir }}/{{ project.logo }}" alt="{{ project.name }}">
                             <dl>
                                 <dt>{{ project.name }}</dt>
                                 <dd>{{ project.description }}</dd>
