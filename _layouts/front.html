@@ -82,17 +82,16 @@
             <div id="main-container-image">
 
                 <div class="work">
-                    {% for p in site.data.projects %}
-                    {% assign project = p %}
+                    {% for project in site.data.projects %}
                     <figure class="white">
-                        <a href="/projects/{{ project.dir }}">
-                            <img src="/projects/{{ project.dir }}/{{ project.logo }}" alt="{{ project.name }}">
+                        <a href="/projects/{{ project[0] }}">
+                            <img src="/projects/{{ project[0] }}/{{ project[1].logo }}" alt="{{ project[1].name }}">
                             <dl>
-                                <dt>{{ project.name }}</dt>
-                                <dd>{{ project.description }}</dd>
+                                <dt>{{ project[1].name }}</dt>
+                                <dd>{{ project[1].description }}</dd>
                             </dl>
                         </a>
-                        <div class="part-info">{{ project.name }}</div>
+                        <div class="part-info">{{ project[1].name }}</div>
                     </figure>
                     {% endfor %}
                 </div>

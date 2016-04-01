@@ -1,5 +1,4 @@
 ﻿sisadosiosestory:
-  dir: sisadosiosestory
   name: نرم افزار 333 داستان
   description: توضیحات
   logo: icon.png
@@ -8,7 +7,6 @@
       url: https://cafebazaar.ir/app/ir.blue.saffron.sisadosiosestory
 
 contacts.plus:
-  dir: contacts.plus
   name: نرم افزار دفترتلفن+
   description: توضیحات
   logo: icon.png
@@ -17,7 +15,6 @@ contacts.plus:
       url: https://cafebazaar.ir/app/ir.blue.saffron.contacts.plus
 
 cafejok:
-  dir: cafejok
   name: نرم افزار کافه جوک
   description: >
     توضیحات چند خطی در مورد برنامه
@@ -30,7 +27,6 @@ cafejok:
       url: https://cafebazaar.ir/app/ir.blue_saffron.cafejok
 
 pichak:
-  dir: pichak
   name: نرم افزار پیچک
   description: کلیپ های کوتاه طنز
   logo: ic_launcher_512.png
