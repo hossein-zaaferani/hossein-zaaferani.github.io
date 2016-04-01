@@ -82,7 +82,8 @@
             <div id="main-container-image">
 
                 <div class="work">
-                    {% for project in site.data.projects %}
+                    {% for p in site.data.projects %}
+                    {% assign project = p %}
                     <figure class="white">
                         <a href="/projects/{{ project.dir }}">
                             <img src="/projects/{{ project.dir }}/{{ project.logo }}" alt="{{ project.name }}">
