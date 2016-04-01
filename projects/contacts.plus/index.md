@@ -1,10 +1,5 @@
 ---
-layout: null
+layout: project
 title: دفترتلفن+
+package_name: contacts.plus
 ---
-
-{% assign app = site.data.projects['contacts.plus'] %}
-<img src="/projects/{{ app.dir }}/{{ app.logo }}" width="128">
-{% for link in app.links %}
-<a href="{{ link.url }}" target="_blank">{{ link.name }}</a><br>
-{% endfor %}

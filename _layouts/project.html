@@ -3,7 +3,7 @@ layout: null
 ---
 
 {% assign app = site.data.projects[page.package_name] %}
-<img src="/projects/{{ page.package_name }}/{{ app.logo }}" width="128">
 {% for link in app.links %}
 <a href="{{ link.url }}" target="_blank">{{ link.name }}</a><br>
 {% endfor %}
+<img src="/projects/{{ page.package_name }}/{{ app.logo }}" width="128">
