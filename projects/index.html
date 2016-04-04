@@ -1,24 +1,19 @@
 ---
-layout: null
-title: پروژه ها
+layout: projects
+title: نمونه کارها
 ---
+
 {% if site.data.projects.size > 0 %}
-<div class="list-group">
+<ul id="gallery" class="grid">
     {% for project in site.data.projects %}
-    <a href="/projects/{{ project[0] }}/" class="list-group-item no-padding">
-        <div class="media">
-            <div class="pull-left">
-                <img class="media-object" src="/projects/{{ project[0] }}/{{ project[1].logo }}"
-                     alt="{{ project[1].name }}" width="150">
-            </div>
-            <div class="media-body">
-                <h4 class="media-heading">{{ project[1].name }}</h4>
-                {% if project[1].subtitle %}<p class="hidden-xs">{{ project[1].subtitle }}</p>{% endif %}
-            </div>
-        </div>
-    </a>
+    <li>
+        <a href="/projects/{{ project[0] }}/">
+            <img src="/projects/{{ project[0] }}/{{ project[1].logo }}" alt="{{ project[1].name }}">
+            <div>{{ project[1].name }}</div>
+        </a>
+    </li>
     {% endfor %}
-</div>
+</ul>
 {% else %}
-<p>There are no projects on {{ site.domain }}</p>
+<p>هیچ پروژه ای وجود ندارد!</p>
 {% endif %}

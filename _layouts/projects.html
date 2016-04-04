@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/projects/assets/style.css"/>
+</head>
+<body>
+<header>
+    <div id="page-top">
+        <div id="header-wrapper">
+            <div id="header">
+                <div id="logo"><a href="/projects">نمونه کارها</a></div>
+                <!-- Begin Menu -->
+                <div id="menu-wrapper">
+                    <ul>
+                        <li><a href="https://github.com/{{ site.github_username }}" target="_blank">Github</a></li>
+                        <li><a href="/about">درباره</a></li>
+                        <li><a href="{{ site.domain }}">خانه</a></li>
+                    </ul>
+                </div>
+                <!-- End Menu -->
+            </div>
+        </div>
+    </div>
+</header>
+<div id="main-wrapper">
+    <article>
+        {{ content }}
+    </article>
+</div>
+<footer>
+    <div id="footer-wrapper">
+        <div id="footer">
+            <div id="footer-content">
+
+                <!-- Begin Copyright -->
+                <div id="copyright">
+                    <p>© Copyright 2016</p>
+                </div>
+                <!-- End Copyright -->
+
+                <!-- Begin Social Icons -->
+                <div id="socials">
+                    <ul>
+                        <li><a href="#"><img src="icon-rss.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <!-- End Social Icons -->
+
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
