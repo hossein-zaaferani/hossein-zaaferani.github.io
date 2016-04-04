@@ -81,7 +81,7 @@
         <div class="box box-right">
             <div class="images">
                 {% for shot in app.screen_shots %}
-                <img src="/projects/{{ page.package_name }}/{{ shot.image_name }}" {% if forloop.index> 1 %}
+                <img src="/projects/{{ page.package_name }}/{{ shot.image_name }}" {% if !forloop.first %}
                 style="display: none" {% endif %}>
                 {% endfor %}
                 <a class="next">
