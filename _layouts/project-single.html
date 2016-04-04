@@ -81,8 +81,8 @@
         <div class="box box-right">
             <div class="images">
                 {% for shot in app.screen_shots %}
-                <img src="/projects/{{ page.package_name }}/{{ shot.image_name }}" {% if !forloop.first %}
-                style="display: none" {% endif %}>
+                <img src="/projects/{{ page.package_name }}/{{ shot.image_name }}" {% unless forloop.first %}
+                style="display: none" {% endunless %}>
                 {% endfor %}
                 <a class="next">
                     <img src="/projects/assets/ic_action_next_item.png">
