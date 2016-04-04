@@ -250,8 +250,8 @@ ul.grid:after {
 
 ul.grid li {
     width: 156px;
-    margin: 0 0 20px 20px;
-    float: left;
+    margin: 0 20px 20px 0;
+    float: right;
     overflow: hidden;
     background: #fff;
     padding: 10px;
