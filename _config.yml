@@ -1,20 +1,27 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: سایت شخصی حسین زعفرانی
 name: حسین زعفرانی
 email: zaaferani@hotmail.com
 description: >
   توضیحات سایت 
-about: > # this means to ignore newlines until "baseurl:"
+about: >
   حسین زعفرانی هستم
   در این مکان توضیحاتی در مورد خودم خواهم نوشت
-#url: http://hossein-zaaferani.ir # the base hostname & protocol for your site
+biography: >
+  حسین زعفرانی متولد 13 بهمن 1374 در شهر قاین
+  <br>
+  علاقه مند به برنامه نویسی
+  <br>
+  آشنایی با زبان های برنامه نویسی
+  Android, Basic4android, Python, C++, Html, Css, JavaScript, JQuery
+  <br>
+  <b>رزومه کاری:</b>
+  <br>
+  ساخت نرم افزار شارژ حساب اینترنت برای دانشگاه بزرگمهر قاینات
+  <br>
+  ساخت چندین برنامه اندروید و انتشار آن ها در مارکت های معتبر
+  <br>
+
 base_url: http://hossein-zaaferani.ir
 blog: http://hossein-zaaferani.ir/blog
 
