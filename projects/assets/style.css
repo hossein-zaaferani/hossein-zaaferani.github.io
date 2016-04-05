@@ -127,12 +127,12 @@ a:hover {
 .box-left .line span {
     background: #fff;
     position: relative;
-    top: -9px;
+    top: -13px;
     padding: 0 10px;
 }
 
 .box-left .description {
-
+    line-height: 2em;
 }
 
 .dl-links {
