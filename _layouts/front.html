@@ -56,6 +56,8 @@
         {% if site.email %}
         <a href="mailto:{{ site.email }}" class="icon fa-envelope"><span>Email</span></a>
         {% endif %}
+
+        <a href="#info" class="icon fa-info-circle"><span>بیوگرافی و رزومه کاری</span></a>
     </nav>
 
     <!-- Main -->
@@ -87,8 +89,8 @@
                         <a href="/projects/{{ project[0] }}">
                             <img src="/projects/{{ project[0] }}/{{ project[1].logo }}" alt="{{ project[1].name }}">
                             <dl>
-                                <dt>{{ project[1].name }}</dt>
-                                <dd>{{ project[1].description }}</dd>
+                                <dt>{{ project[1].name | truncate:5}}</dt>
+                                <dd>{{ project[1].description | strip_html | truncatewords:5}}</dd>
                             </dl>
                         </a>
                         <div class="part-info">{{ project[1].name }}</div>
@@ -104,10 +106,10 @@
             </div>
         </article>
 
-        <!-- Contact -->
-        <article id="contact" class="panel">
+        <!-- Info -->
+        <article id="info" class="panel">
             <header>
-                <h2>Contact Me</h2>
+                <h2>بیوگرافی و رزومه کاری</h2>
             </header>
         </article>
 
