@@ -10,8 +10,7 @@
 
 contacts.plus:
   name: نرم افزار دفترتلفن+
-  description: >
-  فقط در سه جمله
+  description: فقط در سه جمله
   logo: icon.png
   links:
     - name: بازار
@@ -24,8 +23,7 @@ contacts.plus:
 
 cafejok:
   name: نرم افزار کافه جوک
-  description: >
-  نرم افزار کافه جوک شامل 17000 پیامک
+  description: نرم افزار کافه جوک شامل 17000 پیامک
   logo: logo.png
   links:
     - name: بازار
@@ -39,8 +37,7 @@ cafejok:
 
 pichak:
   name: نرم افزار پیچک
-  description: >
-  پیچک نرم افزاری هست که تعداد زیادی فیلم توی خودش داره
+  description: پیچک نرم افزاری هست که تعداد زیادی فیلم توی خودش داره
   logo: ic_launcher_512.png
   links:
     - name: مایکت
