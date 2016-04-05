@@ -34,7 +34,7 @@
     <!-- About -->
     <section class="blurb">
         <h2>درباره</h2>
-        <p>{{ site.about }}</p>
+        <p>{{ site.biography | strip_html | truncate:150 }}</p>
         <ul class="actions">
             <li><a href="/about" class="button">بیشتر</a></li>
         </ul>
