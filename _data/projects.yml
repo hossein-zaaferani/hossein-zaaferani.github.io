@@ -5,6 +5,8 @@
   links:
     - name: بازار
       url: https://cafebazaar.ir/app/ir.blue.saffron.sisadosiosestory
+  screen_shots:
+      - image_name: 1.jpg
 
 contacts.plus:
   name: نرم افزار دفترتلفن+
@@ -13,6 +15,11 @@ contacts.plus:
   links:
     - name: بازار
       url: https://cafebazaar.ir/app/ir.blue.saffron.contacts.plus
+  screen_shots:
+      - image_name: 1.jpg
+      - image_name: 2.jpg
+      - image_name: 3.jpg
+      - image_name: 4.jpg
 
 cafejok:
   name: نرم افزار کافه جوک
@@ -25,6 +32,12 @@ cafejok:
   links:
     - name: بازار
       url: https://cafebazaar.ir/app/ir.blue_saffron.cafejok
+  screen_shots:
+      - image_name: ir.blue_saffron.cafejok0.jpg
+      - image_name: ir.blue_saffron.cafejok1.jpg
+      - image_name: ir.blue_saffron.cafejok2.jpg
+      - image_name: ir.blue_saffron.cafejok3.jpg
+      - image_name: ir.blue_saffron.cafejok4.jpg
 
 pichak:
   name: نرم افزار پیچک
