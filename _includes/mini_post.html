@@ -3,7 +3,7 @@
     <header>
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <time class="published" datetime="{{ post.date | date: '%Y-%m-%d' }}}">
-            {{ post.date | jdate: "%A %e %b %Y"}}
+            {{ post.date | date: "%b %-d, %Y"}}
         </time>
 
         {% if post.author %}
