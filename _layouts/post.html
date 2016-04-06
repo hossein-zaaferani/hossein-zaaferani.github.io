@@ -10,7 +10,7 @@ layout: blog
         </div>
         <div class="meta">
             <time class="published" datetime="{{ page.date | date: '%Y-%m-%d' }}">
-                {{ page.date | jdate: "%A %e %b%Y"}}
+                {{ page.date | date: "%b %-d, %Y"}}
             </time>
 
             {% if page.author %}
